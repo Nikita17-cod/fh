@@ -7,8 +7,9 @@ body {
 }
 
 .background {
-    height: 100vh;
+    // height: 800px;
     background-color: #2F2F2F;
+    background-size: 100%;
 }
 
 .wrapper {
@@ -202,6 +203,7 @@ body {
     margin: 30px;
 }
 
-.section__bottom {
-    margin-top: 70px;
+.section__button {
+    height: 100px;
+    padding-top: 70px;
 }
