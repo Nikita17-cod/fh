@@ -317,9 +317,12 @@ body {
 }
 
 @media (max-width: 527px) {
-    .color {
+    .media {
         width: 70%;
-        height: 50%;
+        height: 80%;
+    }
+    .color {
+        margin: 20px;
     }
     .button__second {
         padding: 25px 150px;
@@ -339,5 +342,12 @@ body {
         width: 30px;
         height: 30px;
         top: 16px;
+    }
+    .media {
+        width: 60%;
+        height: 80%;
+    }
+    .color {
+        margin: 18px;
     }
 }
