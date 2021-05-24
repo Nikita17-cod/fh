@@ -595,9 +595,67 @@ body {
   padding-top: 70px;
 }
 
+.palette__active {
+  display: block;
+  position: relative;
+}
+
+.palette__active:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.palette__active:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(icon-path);
+  opacity: 0;
+}
+
+.palette__active:active:before,
+.palette__active:active:after {
+  opacity: 1;
+}
+
 @media screen and (min-width: 600px) {
   .form {
     width: 40vw;
     max-width: 15em;
+  }
+}
+
+@media (max-width: 527px) {
+  .color {
+    width: 70%;
+    height: 50%;
+  }
+  .button__second {
+    padding: 25px 150px;
+  }
+  .arr__right--second {
+    left: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .button__second {
+    padding: 15px 90px;
+    font-size: 25px;
+  }
+  .arr__right--second {
+    left: 185px;
+    width: 30px;
+    height: 30px;
+    top: 16px;
   }
 }
